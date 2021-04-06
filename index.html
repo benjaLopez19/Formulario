@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta lang="es-ES">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Formulario</title>
+    <meta name="description" content="formulario">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/estilos.css">
+    
+    <script src="js/formulario.js" async defer></script>
+</head>
+
+<body>
+    <div id="msg"></div>
+    <fieldset id="cuadro">
+        <legend>Formulario</legend>
+        <form action="/" method="POST" accept-charset="utf-8" id="formulario">
+            <ul id="lista">
+                <li>
+                    <label for="Nombres" class="casillas">Nombres</label>
+                    <input id="nombres" type="text" placeholder="Nombres" required>
+                </li>
+                <li>
+                    <label for="Apellidos" class="casillas">Apellidos</label>
+                    <input id="apellidos" type="text" placeholder="Apellidos" required>
+                </li>
+                <li>
+                    <label for="RUT" class="casillas">RUT</label>
+                    <input id="rut" type="text" placeholder="RUT" required>
+                </li>
+                <li>
+                    <label for="mail" class="casillas">Correo</label>
+                    <input id="correo" type="email" placeholder="Correo" required>
+                </li>
+                <li>
+                    <label for="Telefono" class="casillas">Teléfono</label>
+                    <input id="telefono" type="number" placeholder="Teléfono" required>
+                </li>
+                <li>
+                    <label for="lenguajes">Lenguajes de programación de su interes:</label>
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="Python" id="python" value="Python" class="box">
+                            <label>Python</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="Java" id="java" value="Java" class="box">
+                            <label>Java</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="Typescript" id="typescript" value="Typescript" class="box">
+                            <label for="">Typescript</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="PHP" id="php" value="PHP" class="box">
+                            <label for="">PHP</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="C#" id="c#" value="C#" class="box">
+                            <label>C#</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="C++" id="c++" value="C++" class="box">
+                            <label>C++</label>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <label for="conocimiento">Nivel de conocimiento en programación:</label>
+                    <input type="range" name="Conocimiento" id="conocimiento" min="0" max="100">
+                </li>
+
+                <li>
+                    <label for="exp">¿Cuantos años de experiencia laboral tiene?</label>
+                    <ul>
+                        <li>
+                            <label for="">1</label>
+                            <input type="radio" name="exp" id="valor1" value="1" class="year" required>
+                            <br>
+                        </li>
+                        <li>
+                            <label for="">2</label>
+                            <input type="radio" name="exp" id="valor1" value="2" class="year" required>
+                            <br>
+                        </li>
+                        <li>
+                            <label for="">3</label>
+                            <input type="radio" name="exp" id="valor1" value="3" class="year" required>
+                            <br>
+                        </li>
+                        <li>
+                            <label for="">4</label>
+                            <input type="radio" name="exp" id="valor1" value="4" class="year" required>
+                            <br>
+                        </li>
+                        <li>
+                            <label for="">5</label>
+                            <input type="radio" name="exp" id="valor1" value="5" class="year" required>
+                            <br>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <label for="description" id="desc">Descripción breve de usted:</label>
+                    <textarea name="description" id="descripcion" cols="30" rows="10"></textarea>
+                </li>
+            </ul>
+            <button id="reset" type="button" onclick="limpiarDatos()">Limpiar datos</button>
+            <button id="send" type="submit">Enviar datos</button>
+        </form>
+
+    </fieldset>
+</body>
+</html>
